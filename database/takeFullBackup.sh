@@ -1,6 +1,7 @@
 #!/bin/sh
 
-PASSWORD=$1
-DATABASE=$2
+USERNAME=$1
+PASSWORD=$2
+DATABASE=$3
 
-mysqldump -u zf -p$PASSWORD $DATABASE > $DATABASE.sql
+mysqldump -u $USERNAME -p$PASSWORD $DATABASE > $DATABASE.sql
